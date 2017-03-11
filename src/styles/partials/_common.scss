@@ -1,0 +1,54 @@
+body {
+    background: #eee;
+    font: 16px/1.6 'David Libre', serif;
+    padding: 25px;
+    text-align: center;
+}
+
+.people-count {
+    font-size: 20px;
+    line-height: 55px;
+}
+
+button {
+    background: $blue-chill;
+    border: 1px solid #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    padding: 10px;
+    transition: background 0.25s ease;
+
+    &:hover {
+        background: lighten($blue-chill, 5%);
+    }
+}
+
+.delete-button {
+    background: #900;
+    bottom: $vspace;
+    color: #fff;
+    display: none;
+    position: fixed;
+    right: $hspace;
+    z-index: 2;
+
+    &:hover {
+        background: darken(#900, 5%);
+    }
+}
+
+.loader {
+    display: inline-block;
+    height: 100px;
+    padding: 1em;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+
+    svg path,
+    svg rect {
+        fill: $blue-chill;
+    }
+}

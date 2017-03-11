@@ -1,0 +1,62 @@
+.people-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person-container {
+    background: #e5e5e5;
+    border: 1px solid #444;
+    cursor: pointer;
+    float: left;
+    margin: $vspace $hspace;
+    padding: $vspace $hspace;
+    position: relative;
+    transition: all 0.5s ease;
+    width: 285px;
+
+    &.active {
+        background: #e59e9e;
+        border: 1px solid #900;
+
+        h3,
+        p {
+            opacity: 0.35;
+        }
+
+        img {
+            opacity: 0.1;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    .full-name {
+        border-bottom: 1px solid $blue-chill;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-bottom: $vspace/2;
+        padding-bottom: $vspace/2;
+        text-transform: capitalize;
+    }
+
+    .person-details {
+        text-align: left;
+
+        p {
+            padding: $vspace/5 0;
+
+            span {
+                display: inline-block;
+                font-weight: bold;
+                min-width: 50px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+@import 'https://fonts.googleapis.com/css?family=David+Libre';
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+::-moz-selection {
+  color: #fff;
+  background: #2c3e50; }
+
+::selection {
+  color: #fff;
+  background: #2c3e50; }
+
+body {
+  background: #eee;
+  font: 16px/1.6 'David Libre', serif;
+  padding: 25px;
+  text-align: center; }
+
+.people-count {
+  font-size: 20px;
+  line-height: 55px; }
+
+button {
+  background: #129793;
+  border: 1px solid #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 1.25px;
+  padding: 10px;
+  transition: background 0.25s ease; }
+  button:hover {
+    background: #15aea9; }
+
+.delete-button {
+  background: #900;
+  bottom: 15px;
+  color: #fff;
+  display: none;
+  position: fixed;
+  right: 10px;
+  z-index: 2; }
+  .delete-button:hover {
+    background: maroon; }
+
+.loader {
+  display: inline-block;
+  height: 100px;
+  padding: 1em;
+  text-align: center;
+  vertical-align: top;
+  width: 20%; }
+  .loader svg path,
+  .loader svg rect {
+    fill: #129793; }
+
+.people-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.person-container {
+  background: #e5e5e5;
+  border: 1px solid #444;
+  cursor: pointer;
+  float: left;
+  margin: 15px 10px;
+  padding: 15px 10px;
+  position: relative;
+  transition: all 0.5s ease;
+  width: 285px; }
+  .person-container.active {
+    background: #e59e9e;
+    border: 1px solid #900; }
+    .person-container.active h3,
+    .person-container.active p {
+      opacity: 0.35; }
+    .person-container.active img {
+      opacity: 0.1; }
+  .person-container img {
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.5s ease; }
+  .person-container .full-name {
+    border-bottom: 1px solid #129793;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 7.5px;
+    padding-bottom: 7.5px;
+    text-transform: capitalize; }
+  .person-container .person-details {
+    text-align: left; }
+    .person-container .person-details p {
+      padding: 3px 0; }
+      .person-container .person-details p span {
+        display: inline-block;
+        font-weight: bold;
+        min-width: 50px;
+        text-transform: capitalize; }
+
+.has-spacer:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0.25rem 0;
+  width: 100%; }
+
+.is-hidden {
+  display: none; }
+
+.is-flex {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.is-strong {
+  font-weight: 700; }
+
+.is-centered {
+  text-align: center; }
